@@ -280,8 +280,8 @@ class MrpcProcessor(DataProcessor):
             guid = "%s-%s" % (set_type, i)
 
             # tokenization is based on vocab file
-            text_a = tokenization.convert_to_unicode(line[0])
-            label = tokenization.convert_to_unicode(line[1])
+            text_a = tokenization.convert_to_unicode(line[1])
+            label = tokenization.convert_to_unicode(line[0])
             labels.append(label)
 
             if set_type == "test":
